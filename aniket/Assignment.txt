@@ -1,0 +1,34 @@
+                                                                                                                          Assginment no. 1
+Q.1  What is software? What is software Enginering?
+- Software:- It is part of computer that we cannot touch physically is called software .software is a set of instructions ,data,or programs that tell a computer how to function.
+-Software Engineering:-Software Engineering is a branch of computer science that involves the design , develpoment ,testing,and maintainance of software applications.Software engineers use engineering principles and knowledge of programming languages to build software solutions for end users. 
+
+Q.2 Explain types of Softwares.
+-1. Application software:- application software is a type of computer program that helps users perform specific tasks. these tasks can be related to: productivity,creativity,communication,word processing,data handling & data analysis.
+
+2. System Software:- system software is a type of computer program that manages a computer's hardware and software resources.system software controls a computer's internal fuctioning and peripherals such as: Mointors, printers,storage devices.
+
+3.Driver software:- driver software allows one hardware device to interact with another hardware device .it allows operating systems and other computer applications to access hardware fuctionalities.
+
+4.Middleware:- Middleware enables communication and data management for distributed applications. It allows organizations to quickly and easily integrate their existing systems with new ones.
+
+5.Programming Software:-Programming software is a tool that helps software developers create, debug, and maintain other programs and applications.
+
+Q.3 What is SDLC ? Explain each phase of SDLC
+-SDLC stands for Software Development Life Cycle. It's a structured process that development teams use to design, develop, and test software. The goal of SDLC is to produce high-quality software that meets or exceeds customer expectations.
+
+-There are 6 phases of SDLC
+1.Requirement Gathering:- The requirements phase of the Software Development Life Cycle (SDLC) is where the foundations of the software are decided. It's the most crucial phase for the development team and project.
+
+2.Requirement Analysis:- Requirements analysis is a crucial phase of the software development life cycle (SDLC), where you define and document the needs and expectations of your clients and users.
+
+3.Designing:- The design phase is an essential part of the Software Development Life Cycle (SDLC). 
+ In this phase, software developers define the technical details of the product. These details can include: Screen designs, Databases, Sketches, System interfaces, Prototypes.
+
+4.Implementation or Coding:- This phase is initiated after the system has been tested and accepted by the user. In this phase, the system is installed to support the intended business functions.
+
+5.Testing:- It's where developers investigate whether their code and programming work according to customer requirements.
+
+6.Maintainance:-It's where developers investigate whether their code and programming work according to customer requirements.
+
+  
