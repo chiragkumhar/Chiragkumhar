@@ -1,3 +1,5 @@
+
+
 // program 12 Apple and student 
 #include <stdio.h>
 
