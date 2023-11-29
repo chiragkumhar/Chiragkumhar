@@ -1,3 +1,5 @@
+//Program-5. WAP to print factorial of given number
+ 
 #include<stdio.h>
 main()
 {
@@ -9,6 +11,6 @@ main()
 	{
 		f=f*i;
 	}
-	printf("The Factorial of given Number is : %d",f);
+	printf("The Factorial of given Number %d is : %d",f);
 	
 }
