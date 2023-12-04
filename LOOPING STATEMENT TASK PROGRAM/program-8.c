@@ -3,13 +3,14 @@
 #include<stdio.h>
 main()
 {
-	int i,num,max;
+	int i,num,max=;
 	printf("Enter the Numbers : ");
 	scanf("%d",&num);
 	
 	for(i=num;i<=max;i++)
 	{
-		if(i<=max);
+		
+		if(i<max);
 		
 	}
 	printf("Max of Given Number is %d",max);
