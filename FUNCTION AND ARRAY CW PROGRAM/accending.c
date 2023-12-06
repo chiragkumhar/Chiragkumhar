@@ -8,7 +8,7 @@ main()
 	{
 		for(j=i+1;j<5;j++)
 		{
-			if(b[i]<b[j])
+			if(b[i]>b[j])
 			{
 				a=b[i];
 				b[i]=b[j]; 
