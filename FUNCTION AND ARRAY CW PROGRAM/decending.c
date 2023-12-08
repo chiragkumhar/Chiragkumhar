@@ -16,7 +16,7 @@ main()
 			}		
 		}	
 	}
-	printf("The Number in asending order is : ");
+	printf("The Number in Decending order is : ");
 	
 	for(i=0;i<5;i++)
 	{
