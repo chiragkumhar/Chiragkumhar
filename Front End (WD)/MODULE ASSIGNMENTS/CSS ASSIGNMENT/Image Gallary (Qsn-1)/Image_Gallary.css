@@ -1,0 +1,154 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Gallary {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 0.5fr;
+            gap: 10px;
+            background-color: black;
+        }
+
+        .Gallary .box {
+            border: 2px solid black;
+        }
+
+        .Gallary .box1 {
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background-image: url(Image/GallaryImage-1.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box2 {
+            grid-column: 5/7;
+            grid-row: 1/2;
+            background-image: url(Image/GallaryImage-2.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box3 {
+            grid-column: 7/8;
+            grid-row: 1/5;
+        }
+
+        .Gallary .box4 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-image: url(Image/GallaryImage-4.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box5 {
+            grid-column: 2/6;
+            grid-row: 2/3;
+            background-image: url(Image/GallaryImage-5.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box6 {
+            grid-column: 6/7;
+            grid-row: 2/3;
+            background-image: url(Image/GallaryImage-6.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box7 {
+            grid-column: 1/4;
+            grid-row: 3/4;
+            background-image: url(Image/GallaryImage-7.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box8 {
+            grid-column: 4/7;
+            grid-row: 3/4;
+            background-image: url(Image/GallaryImage-8.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+
+        .Gallary .box9 {
+            grid-column: 1/3;
+            grid-row: 4/5;
+            background-image: url(Image/GallaryImage-9.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box10 {
+            grid-column: 3/5;
+            grid-row: 4/5;
+            background-image: url(Image/GallaryImage-10.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Gallary .box11 {
+            grid-column: 5/7;
+            grid-row: 4/5;
+            background-image: url(Image/GallaryImage-11.jpeg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .taskbar {
+            display: flex;
+            justify-content: end;
+            /* margin-right: 20px; */
+            flex-direction: column;
+            align-items: end;
+            padding-right: 10px;
+            gap: 20px;
+        }
+
+        .taskbar h1 {
+            color: white;
+            font-size: 25px;
+            margin-top: 25px;
+            font-family: monospace;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            margin-top: 15px;
+        }
