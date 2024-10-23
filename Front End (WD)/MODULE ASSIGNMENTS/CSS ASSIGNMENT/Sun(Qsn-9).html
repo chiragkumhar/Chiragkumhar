@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to bottom, #ffcc66, #cc6600);
+        }
+        .round {
+            height: 250px;
+            width: 250px;
+            background-color: yellow;
+            margin: 200px auto;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 0 30px 10px rgba(250, 255, 0, 0.5);
+        }
+        .round::before {
+            content: '';
+            position: absolute;
+            top:2px;
+            left:2px;
+            width: 90%;
+            height: 90%;
+            background-color: #cc6600;
+            border-radius: 50%;
+        }   
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="round"></div>
+    </div>
+</body>
+
+</html>
