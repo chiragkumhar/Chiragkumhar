@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: darkcyan;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: cursive;
+            color: white;
+        }
+
+        .logo {
+            /* background: lightblue; */
+            font-size: 40px;
+            font-weight: bold;
+            padding: 25px 40px;
+        }
+
+        .nav ul {
+            padding: 25px 40px;
+            /* background-color: green;  */
+        }
+
+        .nav li {
+            /* background-color: red; */
+            display: inline;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 30px;
+            position: relative;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .submenu {
+            border: 1px solid saddlebrown;
+            position: absolute;
+            top: 50px;
+            right: -30px;
+            /* display: none; */
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .first:hover .submenu {
+            /* display: block   */
+            opacity: 1;
+        }
+
+        .nestedmenu {
+            border: 2px solid green;
+            position: absolute;
+            top: 0;
+            left: 150px;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .second:hover .nestedmenu {
+            opacity: 1;
+        }
+
+        .submenu li {
+            display: block;
+            color: black;
+            /* border: 2px solid black; */
+        }
+
+        .submenu a {
+            color: black;
+        }
+
+        .fa-bars {
+            font-size: 30px;
+            display: none;
+        }
+
+        @media (max-width:800px) {
+            .nav ul {
+                display: none;
+            }
+
+            .fa-bars {
+                display: block;
+                margin: 30px;
+            }
+        }
+
+        .secondmenu {
+            /* background-color: rebeccapurple; */
+            /* border: 2px solid saddlebrown   ; */
+            /* position: absolute; */
+            /* right: 20px; */
+            display: none;
+        }
+
+        .secondmenu li {
+            /* background-color: green; */
+            /* padding: 10px; */
+            list-style: none;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="nav">
+            <ul>
+                <li class="first"><a href="">Home</a>
+                    <ul class="submenu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li class="second"><a href="">Services</a>
+                            <ul class="nestedmenu">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="return showmenu()"></i></i>
+        </div>
+    </div>
+    <div class="secondmenu" id="submenu" on>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <script>
+        sb = document.getElementById('submenu')
+
+        function showmenu() {
+            if (sb.style.display == "block") {
+                sb.style.display = "none"
+            }
+            else {
+                sb.style.display = "block"
+                sb.style.backgroundColor = "lightblue"
+                sb.style.width = "100%"
+            }
+            return false
+        }
+
+        function test() {
+            sb.style.display = "none"
+        }
+        window.addEventListener('resize', test)
+    </script>
+</body>
+
+</html>

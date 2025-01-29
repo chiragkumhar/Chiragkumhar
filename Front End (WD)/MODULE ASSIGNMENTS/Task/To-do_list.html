@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Todo list</h1>
+    <input type="text" name="" id="list_data" placeholder="Enter Data for list">
+    <button onclick="add_list()">Add</button>
+    <ul id="li">
+
+    </ul>
+    <script>
+        function add_list() {
+            input_data = document.getElementById("list_data").value;
+
+            list_data = document.createElement("p");
+            list_data.className = 'raju';
+            btn = document.createElement('button');
+            btn.className = 'birju';
+            txt = document.createTextNode("Del");
+            body = document.querySelector('body');
+
+            btn.append(txt);
+            body.append(btn);
+
+            list_data.textContent = input_data;
+
+            list = document.getElementById('li')
+            list.append(list_data);
+
+            function test() {
+                list_data.remove()
+                btn.remove()
+            }
+            btn.addEventListener("click", test)
+        }
+        function test() {
+            list_data.remove()
+            btn.remove()
+        }
+        btn.addEventListener("click", test)
+    </script>
+</body>
+
+</html>

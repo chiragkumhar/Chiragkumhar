@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            background-color: cadetblue;
+            /* height: 300px; */
+            width: 400px;
+            padding: 20px;
+            margin: 100px auto;
+        }
+
+        .box2 {
+            /* background-color: black; */
+            padding: 20px;
+        }
+
+        .regisration,
+        .Login {
+            background-color: darkslateblue;
+            padding: 40px;
+            /* display: none; */
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid white;
+            background: none;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 15px;
+            background-color: coral;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+</div>
+<div class="box">
+    <div class="box2">
+        <div class="regisration" id="regisration">
+            <form action="">
+                <input type="text" placeholder="Name"><br>
+                <input type="email" placeholder="Email"><br>
+                <input type="number" placeholder="Mobile No."><br>
+                <input type="password" placeholder="Password"><br>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="Login" id="loginpage">
+            <form action="">
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="buttons">
+        <button onclick="rg()">Registration</button>
+        <button onclick="lg()">Login</button>
+    </div>
+    <script>
+
+        regisration = document.getElementById('regisration')
+        login = document.getElementById('loginpage')
+
+        console.log(regisration)
+        console.log(login)
+
+        login.style.display = "none"
+
+        function rg() {
+            regisration.style.display = "block"
+            login.style.display = "none"
+        }
+        function lg() {
+            regisration.style.display = "none"
+            login.style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

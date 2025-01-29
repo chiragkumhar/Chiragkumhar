@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: darkcyan;
+            display: flex;
+            justify-content: space-between;
+            font-family: cursive;
+            color: white;
+        }
+
+        .logo {
+            /* background: lightblue; */
+            font-size: 40px;
+            font-weight: bold;
+            padding: 25px 40px;
+        }
+
+        .nav ul {
+            padding: 25px 40px;
+            /* background-color: green;  */
+        }
+
+        .nav li {
+            /* background-color: red; */
+            display: inline;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #submenu {
+            border: 1px solid saddlebrown;
+            position: absolute;
+            top: 50px;
+            right: -30px;
+            display: none;
+        }
+
+        #submenu li {
+            display: block;
+            color: black;
+            /* border: 2px solid black; */
+        }
+
+        #submenu a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="nav">
+            <ul>
+                <li><a href="" id="menu" onclick=" return showmenu()">Home</a>
+                    <ul id="submenu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                    </ul>
+                </li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
+        <script>
+            sb = document.getElementById('submenu')
+            function showmenu() {
+                if(sb.style.display == "block"){
+                    sb.style.display = "none"
+                }
+                else{
+                    sb.style.display = "block"
+                }
+                return false
+            }
+        </script>
+    </div>
+</body>
+
+</html>

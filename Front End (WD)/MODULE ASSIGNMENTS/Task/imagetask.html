@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="" alt="" id="img1" height="200px" width="200px">
+    <img src="image1.jpg" alt="" id="img2" height="200px" width="200px">
+    <img src="image1.jpg" alt="" id="img3" height="200px" width="200px">
+
+    <button onclick="img1()">Get image</button>
+    <button onclick="img2()">Change Img</button>
+    <button onclick="img3()">Change Img Again</button>
+
+    <script>
+        _img1= document.getElementById('img1')
+        _img2= document.getElementById('img2')
+        _img3= document.getElementById('img3')
+        function img1(){
+            _img1.src='image1.jpg'
+        }
+
+        function img2(){
+            _img2.src='img2.jpeg'
+        }
+
+        function img3(){
+            if(_img3.src =='image1.jpg'){ 
+                _img3.src='img2.jpeg'
+            }
+            else{
+                _img3.src='img2.jpeg'
+            }
+        }
+    </script>
+</body>
+
+</html>

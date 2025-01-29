@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    img {
+        height: 350px;
+        width: 500px;
+        position: absolute;
+    }
+
+    .container {
+        display: flex;
+        width: 500px;
+        height: 350px;
+        border: 5px solid blue;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #i1 {
+        z-index: 4;
+    }
+
+    #i2 {
+        z-index: 3;
+    }
+
+    #i3 {
+        z-index: 2;
+    }
+
+    #i4 {
+        z-index: 1;
+    }
+
+    button {
+        z-index: 5;
+        height: 50px;
+        font-size: 25px;
+        background: transparent;
+        color: white;
+        border: none;
+        position: absolute;
+    }
+
+    .btn1{
+        top: 150px;
+    }
+    .btn2{
+        top: 150px;
+        right: 0;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="img1.jpg" alt="" id="i1">
+        <img src="img2.jpeg" alt="" id="i2">
+        <img src="img3.jpg" alt="" id="i3">
+        <img src="img4.jpg" alt="" id="i4">
+        <button  class="btn1" id="btn"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="next()" class="btn2"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <script>
+        img = document.querySelectorAll('img');
+        btn1 = document.getElementById('btn');
+        console.log(btn1);
+        count = 0;
+        function next() {
+            for (i = 0; i < img.length; i++) {
+                img[i].style.left = "0px"
+            }
+
+            img[count].style.marginLeft = "500px"
+            img[count].style.transition = ".1s"
+            count++;
+
+            if (count == 4) {
+                count = 0
+                for (y = 0; y < img.length; y++) {
+                    img[y].style.marginLeft = "0"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
